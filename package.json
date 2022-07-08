@@ -1,4 +1,6 @@
+
 {
+  "homepage": "https://DavonHB.github.io",
   "name": "googlebooks-app",
   "version": "1.0.0",
   "description": "",
@@ -11,7 +13,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "",
   "devDependencies": {
     "concurrently": "^5.1.0"
   }
