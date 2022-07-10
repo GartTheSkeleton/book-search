@@ -25,7 +25,7 @@ const resolvers = {
 
         login: async (parent, { email, password }) => {
             const user = await User.findOne({ email });
-            const token = signToken(user);
+            
 
             if (!user) {
                 throw new AuthenticationError('Invalid credentials')
@@ -36,7 +36,8 @@ const resolvers = {
             if (!correctPw) {
                 throw new AuthenticationError('Invalid password')
             }
-
+            
+            const token = signToken(user);
             return { user, token };
         },
 
